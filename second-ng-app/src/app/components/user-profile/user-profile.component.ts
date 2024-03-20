@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './user-profile.component.css'
 })
 export class UserProfileComponent {
-  @Input() name = ""
+  @Input({alias: "userName"}) name = ""
 }
