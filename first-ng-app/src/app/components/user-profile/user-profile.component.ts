@@ -14,4 +14,10 @@ export class UserProfileComponent {
   salary = 40000
   isBtnDisabled = true
   isInput = "test"
+
+  users = [
+    {name: "Akash", isSingle: true, salary: 60000},
+    {name: "Suresh", isSingle: false, salary: 35000},
+    {name: "Shruti", isSingle: true, salary: 40000}
+  ]
 }

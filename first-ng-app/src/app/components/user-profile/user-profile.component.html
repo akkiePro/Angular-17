@@ -19,3 +19,14 @@
 <input type="text" [(ngModel)]="isInput">
 <!-- to do this add FormModule dependency in user-profile.component.ts -->
 <!-- this is known as banana in the box -->
+
+<!-- @if and @for -->
+<div>
+    @for (u of users; track u.name) {
+        @if (u.salary > 35000) {
+            <h4>Name = {{u.name}}, Status = {{u.isSingle ? "single" : "married"}}, Salary = {{u.salary}}</h4>
+        } @else {
+            <h4>Name = {{u.name}}, Status = {{u.isSingle ? "single" : "married"}}, Salary = HIDDEN</h4>
+        }
+    }
+</div>
