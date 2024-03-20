@@ -6,11 +6,7 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, UserProfileComponent],
-  // templateUrl: './app.component.html',
-  // instead of creating new HTML file, we can write html code in template also.
-  template: `
-  <h1>Hello world from TS.</h1>
-  `,
+  templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
