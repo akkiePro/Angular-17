@@ -13,4 +13,8 @@
 <!-- 2. Angular way -->
 <!-- two way event data binding -->
 <h5>Your Input = {{isInput}}</h5>
-<input type="text" [value]="isInput" (input)="onChange($event)">
+<!-- <input type="text" [value]="isInput" (input)="onChange($event)"> -->
+
+<!-- shorthand method of two way event data binding -->
+<input type="text" [(ngModel)]="isInput">
+<!-- to do this add FormModule dependency in user-profile.component.ts -->

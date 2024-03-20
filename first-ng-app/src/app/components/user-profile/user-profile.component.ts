@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-user-profile',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './user-profile.component.html',
   styleUrl: './user-profile.component.css'
 })
@@ -13,8 +14,4 @@ export class UserProfileComponent {
   salary = 40000
   isBtnDisabled = true
   isInput = "test"
-  onChange(e: Event) {
-    const value = (e.target as HTMLInputElement).value
-    this.isInput = value
-  }
 }
