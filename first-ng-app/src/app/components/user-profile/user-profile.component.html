@@ -2,3 +2,13 @@
 <h4>Name = {{name}}, Status = {{status.toUpperCase()}}, Salary = {{salary}}</h4>
 <!-- using property-binding -->
 <button [disabled]="isBtnDisabled">Click Me</button>
+
+
+
+<!-- Event Binding -->
+<!-- 1. html way -->
+<!-- onchange, on input, onclick etc etc. -->
+<!-- <input type="text" oninput="whateverFunction()" /> -->
+
+<!-- 2. Angular way -->
+<input type="text" (input)="onChange($event)">
