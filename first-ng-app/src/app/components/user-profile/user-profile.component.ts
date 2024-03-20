@@ -11,4 +11,6 @@ export class UserProfileComponent {
   name = "Ramesh"
   status = "single"
   salary = 40000
+  isBtnDisabled = true
+  // isBtnDisabled = false
 }
