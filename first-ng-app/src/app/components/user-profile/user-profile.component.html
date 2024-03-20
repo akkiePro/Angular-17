@@ -11,4 +11,6 @@
 <!-- <input type="text" oninput="whateverFunction()" /> -->
 
 <!-- 2. Angular way -->
-<input type="text" (input)="onChange($event)">
+<!-- two way event data binding -->
+<h5>Your Input = {{isInput}}</h5>
+<input type="text" [value]="isInput" (input)="onChange($event)">

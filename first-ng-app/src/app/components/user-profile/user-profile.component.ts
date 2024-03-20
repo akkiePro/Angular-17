@@ -12,8 +12,9 @@ export class UserProfileComponent {
   status = "single"
   salary = 40000
   isBtnDisabled = true
+  isInput = "test"
   onChange(e: Event) {
     const value = (e.target as HTMLInputElement).value
-    console.log("onChange() called... " + value)
+    this.isInput = value
   }
 }
