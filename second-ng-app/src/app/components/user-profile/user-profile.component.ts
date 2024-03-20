@@ -1,5 +1,9 @@
 import { Component, Input } from '@angular/core';
 
+function formatName(value: string): string {
+  return "Hi " + value
+}
+
 @Component({
   selector: 'app-user-profile',
   standalone: true,
@@ -8,5 +12,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './user-profile.component.css'
 })
 export class UserProfileComponent {
-  @Input({alias: "userName"}) name = ""
+  @Input({alias: "userName", transform: formatName}) name = ""
 }
