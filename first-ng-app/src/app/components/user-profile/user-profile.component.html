@@ -30,3 +30,14 @@
         }
     }
 </div>
+
+<hr>
+
+<!-- if for using directives which was being used before Angular 17 -->
+<div *ngFor="let u of users">
+    <h4 *ngIf="u.salary > 35000; else elseBlock">Name = {{u.name}}, Status = {{u.isSingle ? "single" : "married"}}, Salary = {{u.salary}}</h4>
+    <ng-template #elseBlock>
+        <h4>Name = {{u.name}}, Status = {{u.isSingle ? "single" : "married"}}, Salary = HIDDEN</h4>
+    </ng-template>
+</div>
+<!-- Note: don't forget to import CommonModule if you use *ng directives -->
