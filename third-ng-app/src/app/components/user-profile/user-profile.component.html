@@ -1,2 +1,6 @@
-<p>user-profile works!</p>
-<button (click)="sendData()">send data</button>
+@if (name) {
+    <h4>name: {{name}}, status: {{isSingle?"single":"coder"}}, salary: {{salary > 25000 ? salary : ""}}</h4>
+} @else {
+    <p>user-profile works!</p>
+    <button (click)="sendData()">send data</button>
+}
