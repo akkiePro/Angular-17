@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, booleanAttribute, numberAttribute } from '@angular/core';
 
 function formatName(value: string): string {
   return "Hi " + value
@@ -12,5 +12,7 @@ function formatName(value: string): string {
   styleUrl: './user-profile.component.css'
 })
 export class UserProfileComponent {
-  @Input({alias: "userName", transform: formatName}) name = ""
+  @Input({alias: "userName", transform: formatName}) name = "";
+  @Input({transform:booleanAttribute}) isSingle!:boolean;
+  @Input({transform:numberAttribute}) salary!: number;
 }
