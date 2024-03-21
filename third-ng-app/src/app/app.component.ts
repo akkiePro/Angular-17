@@ -29,5 +29,12 @@ export class AppComponent {
     {name: "Raman", isSingle: false, salary: 45000}
   ]
 
+  updateData(e: any) {
+    console.log(e);
+
+    const userIndex = this.users.findIndex(user=>user.name == e.name);
+    this.users[userIndex].salary = e.newSalary;
+  }
+
   title = 'third-ng-app';
 }
