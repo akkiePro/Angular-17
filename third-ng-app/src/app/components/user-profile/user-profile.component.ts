@@ -8,5 +8,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './user-profile.component.css'
 })
 export class UserProfileComponent {
-  
+  @Output() myEvent = new EventEmitter();
+  sendData() {
+    this.myEvent.emit("Coders never quit.");
+  }
 }
