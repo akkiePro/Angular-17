@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, booleanAttribute, numberAttribute } from '@angular/core';
 
 @Component({
   selector: 'app-user-profile',
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './user-profile.component.css'
 })
 export class UserProfileComponent {
+  @Input({alias: "userName"}) name!:string;
+  @Input({transform: booleanAttribute}) isSingle!:string;
+  @Input({transform: numberAttribute}) salary!:string;
 
 }
