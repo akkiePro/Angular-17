@@ -12,8 +12,29 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
 export class AppComponent {
   title = 'fourth-ng-app';
   users = [
-    {name: "aman", isSingle: true, salary: 25000},
-    {name: "naman", isSingle: false, salary: 55000},
-    {name: "manan", isSingle: true, salary: 35000}
+    {
+      name: "aman", 
+      isSingle: true, 
+      salary: 25000,
+      currencyCode: 'EUR', 
+      birthdate: "2000, 7, 14", 
+      skills: "Java, C++, C#",
+    },
+    {
+      name: "naman", 
+      isSingle: false, 
+      salary: 55000,
+      currencyCode: '',
+      birthdate: "2001, 3, 24", 
+      skills: "python, .net, php, react"
+    },
+    {
+      name: "manan", 
+      isSingle: true, 
+      salary: 35000,
+      currencyCode: 'USD', 
+      birthdate: "2004, 12, 18", 
+      skills: "Java, android, typescript, angular"
+    }
   ]
 }

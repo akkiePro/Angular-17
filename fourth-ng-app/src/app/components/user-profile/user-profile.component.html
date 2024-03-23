@@ -1,1 +1,2 @@
-<h4>name: {{name}}, status: {{isSingle?"single":"coder"}}, salary: {{salary}}</h4>
+<h4>name: {{name | titlecase}}, status: {{(isSingle?"single":"coder") | uppercase}}, salary: {{salary | currency: currencyCode ? currencyCode : 'INR'}}, birth-date: {{birthdate | date: 'dd-MM-yyyy' }}, SKILLS: {{skills | lowercase}}</h4>
+<!-- CommonModule import is required to use Pipes -->

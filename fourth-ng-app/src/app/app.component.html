@@ -1,4 +1,4 @@
 <h1>app.component.html file</h1>
 @for (u of users; track $index) {
-    <app-user-profile [userName]="u.name" [isSingle]="u.isSingle" [salary]="u.salary"></app-user-profile>
+    <app-user-profile [userName]="u.name" [isSingle]="u.isSingle" [salary]="u.salary" [birthdate]="u.birthdate" [skills]="u.skills" [currencyCode]="u.currencyCode"></app-user-profile>
 }
